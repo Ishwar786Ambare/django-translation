@@ -7,8 +7,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
-    'pages.apps.PagesConfig',
-    'modeltranslation',
+    'pages.apps.PagesConfig',  # new
+    'modeltranslation',  # new
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -17,12 +17,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.locale.LocaleMiddleware', 
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -35,7 +33,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # new
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -72,6 +70,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]  # new
 
 LANGUAGE_CODE = 'en-us'
 # LANGUAGE_CODE = 'fi'
@@ -79,6 +78,7 @@ LANGUAGE_CODE = 'en-us'
 LANGUAGES = (
     ('en-us', _('English')),
     ('fi', _('Finnish')),
+    ('hi', _('Hindi')),
 )
 
 TIME_ZONE = 'UTC'
