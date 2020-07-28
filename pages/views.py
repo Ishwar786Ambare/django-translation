@@ -16,12 +16,7 @@ class HomePageView(TemplateView):
         return context
     
     def render_to_response(self, context, **response_kwargs):
-    
-        # from django.utils import translation
-        # user_language = 'fi' 
-        # translation.activate(user_language)
         response = super(HomePageView, self).render_to_response(context, **response_kwargs)
-        # response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
         response.delete_cookie(settings.LANGUAGE_COOKIE_NAME)
         return response
     

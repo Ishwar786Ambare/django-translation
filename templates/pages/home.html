@@ -8,9 +8,7 @@ LANGUAGE_CODE: {{ LANGUAGE_CODE }}
 
 <br><br>
 
-<a href="{% url 'admin:index' %}">
-    {% trans 'Site administration' %}
-</a>
+<a href="{% url 'admin:index' %}">{% trans 'Site administration' %}</a>
 
 <br><br>
 
@@ -19,8 +17,8 @@ LANGUAGE_CODE: {{ LANGUAGE_CODE }}
     <select name="language">
         {% get_available_languages as LANGUAGES %}
         {% for language in LANGUAGES %}
-        <option value="{{ language.0 }}" {% if language.0 == LANGUAGE_CODE %} selected{% endif %}>
-            {{ language.0|language_name_local }} ({{ language.0 }})
+            <option value="{{ language.0 }}" {% if language.0 == LANGUAGE_CODE %} selected{% endif %}>
+                {{ language.0|language_name_local }} ({{ language.0 }})
         </option>
         {% endfor %}
     </select>

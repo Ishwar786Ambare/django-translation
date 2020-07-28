@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-10 15:22+0300\n"
+"POT-Creation-Date: 2020-07-27 17:24+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,18 +18,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: config/urls.py:15
+#: .\config\settings.py:79
+msgid "English"
+msgstr ""
+
+#: .\config\settings.py:80
+msgid "Finnish"
+msgstr ""
+
+#: .\config\settings.py:81
+msgid "Hindi"
+msgstr ""
+
+#: .\config\urls.py:15
 msgid "admin/"
 msgstr "yllapito/"
 
-#: pages/views.py:11 pages/views.py:30
+#: .\pages\views.py:14 .\pages\views.py:34
 msgid "Home"
 msgstr "Etusivu"
 
-#: templates/pages/home.html:3
+#: .\templates\pages\home.html:3
 msgid "Life is life."
 msgstr "Elämä on laiffii."
 
-#: templates/pages/home.html:11
+#: .\templates\pages\home.html:4
+msgid "my name is ishwar"
+msgstr ""
+
+#: .\templates\pages\home.html:11
 msgid "Site administration"
 msgstr ""
